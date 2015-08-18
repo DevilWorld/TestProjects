@@ -1,0 +1,23 @@
+﻿@model string
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+
+
+
+<script type="text/javascript" src="~/Scripts/AngularJS/Default/DefaultController.js"></script>
+
+<div ng-app="defaultModule">
+    <div ng-controller="defaultController">
+        <table>
+            <tr ng-repeat="person in persons">
+                <td>{{person.id}}</td>
+                <td>{{person.name}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\bin\Debug\CustomCollection.exe.config
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\obj\Debug\CustomCollection.csprojResolveAssemblyReference.cache
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\bin\Debug\CustomCollection.exe
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\bin\Debug\CustomCollection.pdb
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\obj\Debug\CustomCollection.exe
+C:\Users\dinesh.venkatachalam\Source\MyRepos\CustomCollection\CustomCollection\obj\Debug\CustomCollection.pdb

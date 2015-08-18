@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="../../Scripts/angular/Module.js"></script>
+    <script type="text/javascript">
+        var eventModule = angular.module("eventModule", []);
+
+            eventModule.controller("eventController", function($scope) {
+                $scope.books = [
+                    { id: 1, name: 'The Last Days' },
+                    { id: 2, name: 'The November Month' },
+                    { id: 2, name: 'Tora Tora Tora' }
+                ];
+            });
+    </script>
+<h2>Index</h2>
+
+<div ng-app="eventModule">
+    <div ng-init="Persons = [{id: 1, FirstName: 'Robert', LastName: 'Lloyd'},
+                                {id: 2, FirstName: 'Clive', LastName: 'Lloyd'}]"></div>
+
+    <table>
+        <tr ng-repeat="person in Persons">
+            <td>{{person.id}}</td>
+            <td>{{person.FirstName}}</td>
+            <td>{{person.LastName}}</td>
+        </tr>
+    </table>
+
+    <div ng-controller="eventController">
+        <table>
+            <tr ng-repeat="book in books">
+                <td>{{book.id}}</td>
+                <td>{{book.name}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

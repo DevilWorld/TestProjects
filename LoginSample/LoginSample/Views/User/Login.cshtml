@@ -1,0 +1,25 @@
+﻿@model LoginSample.Models.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Login Failed. Check your login details.")
+    <div>
+        <fieldset>
+            @Html.LabelFor(a => a.UserID)
+            @Html.TextBoxFor(a => a.UserID)
+            @Html.ValidationMessageFor(u => u.UserID)
+            @Html.LabelFor(a => a.Password)
+            @Html.TextBoxFor(a => a.Password)
+            @Html.ValidationMessageFor(u => u.Password)
+            <input type="submit" value="Log in" />
+        </fieldset>
+    </div>
+}
+

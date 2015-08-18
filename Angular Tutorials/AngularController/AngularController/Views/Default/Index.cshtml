@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+<h2>Index</h2>
+
+<div ng-app>
+    <h2 ng-controller="HelloWorldMessage"> {{message}} </h2>
+
+    <script type="text/javascript">
+        function HelloWorldMessage($scope) {
+            $scope.message = "Hello World";
+        }
+    </script>
+</div>
+
+
+
