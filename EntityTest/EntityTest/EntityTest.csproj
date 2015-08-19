@@ -78,6 +78,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Test.mdf</DependentUpon>
     </Content>
+    <Content Include="SQL Scripts\tblStudents.sql" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
