@@ -1,0 +1,9 @@
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\bin\Debug\TestDatabase.dacpac
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\bin\Debug\TestDatabase.dll
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\bin\Debug\TestDatabase.pdb
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\Model.xml
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\refactor.xml
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\postdeploy.sql
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\predeploy.sql
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\TestDatabase.dll
+C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\TestDatabase\obj\Debug\TestDatabase.pdb
