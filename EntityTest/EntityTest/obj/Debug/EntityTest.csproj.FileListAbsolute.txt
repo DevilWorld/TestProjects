@@ -1,1 +1,4 @@
 C:\Users\dinesh.venkatachalam\Source\MyRepos\EntityTest\EntityTest\bin\Debug\EntityTest.exe.config
+C:\Users\Dinesh\Source\Repos\TestProjects\EntityTest\EntityTest\bin\Debug\EntityTest.exe.config
+C:\Users\Dinesh\Source\Repos\TestProjects\EntityTest\EntityTest\obj\Debug\EntityTest.exe
+C:\Users\Dinesh\Source\Repos\TestProjects\EntityTest\EntityTest\obj\Debug\EntityTest.pdb
