@@ -6,5 +6,6 @@
 	, LastName		VARCHAR(30)
 	, Gender		VARCHAR(1)
 	, DOB			DATETIME	
-	CONSTRAINT pk_studuent_id PRIMARY KEY (StudentId)
+	, CONSTRAINT pk_studuent_id PRIMARY KEY (StudentId)
 )
+GO

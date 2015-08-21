@@ -6,6 +6,6 @@
 	, City		VARCHAR(30)
 	, [State]	VARCHAR(30)
 	, Zip		INT
-	CONSTRAINT pk_address_id	PRIMARY KEY	(AddressId)
+	, CONSTRAINT pk_address_id	PRIMARY KEY	(AddressId)
 )
 GO

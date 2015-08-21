@@ -64,4 +64,17 @@
     <Build Include="Tables\tblAddress.sql" />
     <Build Include="Tables\tblStudentAddresses.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Tables\tblParents.sql" />
+    <None Include="Tables\tblParentAddresses.sql" />
+    <None Include="Tables\tblStudentParents.sql" />
+    <None Include="Tables\tblSchools.sql" />
+    <None Include="Tables\tblPrincipal.sql" />
+    <None Include="Tables\tblSchool.sql" />
+    <None Include="Tables\tblTeacher.sql" />
+    <None Include="Tables\tblSubjects.sql" />
+    <None Include="Tables\tblClass.sql" />
+    <None Include="Tables\tblStudentClasses.sql" />
+    <None Include="Tables\tblHomeWork.sql" />
+  </ItemGroup>
 </Project>
