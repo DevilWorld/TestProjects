@@ -1,2 +1,0 @@
-C:\Users\dinesh.venkatachalam\Source\MyRepos\EntityTest\EntityTest\bin\Debug\EntityTest.exe.config
-C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\EntityTest\bin\Debug\EntityTest.exe.config
