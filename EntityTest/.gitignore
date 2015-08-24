@@ -193,6 +193,7 @@ UpgradeLog*.htm
 *.ldf
 *.dbmdl
 
+
 # Business Intelligence projects
 *.rdl.data
 *.bim.layout

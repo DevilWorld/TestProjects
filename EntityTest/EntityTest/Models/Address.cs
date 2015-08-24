@@ -14,5 +14,8 @@ namespace EntityTest.Models
         public string City { get; set; }
         public string State { get; set;}
         public int Zip { get; set; }
+
+        //Navigation property
+        public ICollection<StudentAddresses> StudentAddress { get; set; }
     }
 }
