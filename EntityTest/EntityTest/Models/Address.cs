@@ -8,7 +8,7 @@ namespace EntityTest.Models
 {
     class Address
     {
-        public int Id { get; set; }
+        public int AddressId { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string City { get; set; }
@@ -16,6 +16,6 @@ namespace EntityTest.Models
         public int Zip { get; set; }
 
         //Navigation property
-        public ICollection<StudentAddresses> StudentAddress { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

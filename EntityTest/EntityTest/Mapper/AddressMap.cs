@@ -8,8 +8,8 @@ namespace EntityTest.Mapper
         public AddressMap()
         {
             ToTable("tblAddress");
-            HasKey(k => k.Id);
-            Property(p => p.Id).HasColumnName("AddressId").HasColumnType("int");
+            HasKey(k => k.AddressId);
+            Property(p => p.AddressId).HasColumnName("AddressId").HasColumnType("int");
             Property(p => p.Address1).HasColumnName("Address1").HasColumnType("varchar");
             Property(p => p.Address2).HasColumnName("Address2").HasColumnType("varchar");
             Property(p => p.City).HasColumnName("City").HasColumnType("varchar");

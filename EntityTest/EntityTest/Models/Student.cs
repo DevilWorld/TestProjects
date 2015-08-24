@@ -8,7 +8,7 @@ namespace EntityTest.Models
 {
     class Student
     {
-        public int Id { get; set; }
+        public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
@@ -16,6 +16,6 @@ namespace EntityTest.Models
         public string Sex { get; set; }
 
         //Navigation property, which acts as a collection of the child
-        public ICollection<StudentAddresses> StudentAddress { get; set; }
+        public virtual ICollection<Address> Addresses { get; set; }
     }
 }

@@ -69,11 +69,9 @@
   <ItemGroup>
     <Compile Include="EntityContext.cs" />
     <Compile Include="Mapper\AddressMap.cs" />
-    <Compile Include="Mapper\StudentAddressMap.cs" />
     <Compile Include="Mapper\StudentMap.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Student.cs" />
-    <Compile Include="Models\StudentAddresses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
