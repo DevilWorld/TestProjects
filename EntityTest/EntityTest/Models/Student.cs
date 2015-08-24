@@ -14,5 +14,8 @@ namespace EntityTest.Models
         public string LastName { get; set; }
         public DateTime DOB { get; set; }
         public string Sex { get; set; }
+
+        //Navigation property, which acts as a collection of the child
+        public ICollection<StudentAddresses> StudentAddress { get; set; }
     }
 }
