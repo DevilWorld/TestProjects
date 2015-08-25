@@ -15,7 +15,13 @@ namespace EntityTest.Models
         public string State { get; set;}
         public int Zip { get; set; }
 
-        //Navigation property
+        //Navigation property for student
         public virtual ICollection<Student> Students { get; set; }
+
+        //Navagation property for parent
+        public virtual ICollection<Parent> Parents { get; set; }
+
+        //Navigation property for principal
+        public virtual Principal Principal { get; set; }
     }
 }

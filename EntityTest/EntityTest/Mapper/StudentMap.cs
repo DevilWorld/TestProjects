@@ -17,13 +17,21 @@ namespace EntityTest.Mapper
             Property(p => p.Sex).HasColumnName("Gender").HasColumnType("varchar");
             Property(p => p.DOB).HasColumnName("DOB").HasColumnType("datetime2");
 
+            //Many-to-Many relationship for the student with addresses
             HasMany(a => a.Addresses)
                 .WithMany(s => s.Students)
                 .Map(t => t.ToTable("tblStudentAddresses")
                 .MapLeftKey("StudentId")
                 .MapRightKey("AddressId")
                 );
-                
+
+            //Many-to-Many relationship for the parents with Students
+            HasMany(p => p.Parents)
+                .WithMany(s => s.Students)
+                .Map(t => t.ToTable("tblStudentParents")
+                    .MapLeftKey("StudentId")
+                    .MapRightKey("ParentId")
+                );
         }
     }
 }

@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace EntityTest.Models
 {
-    class Student
+    class Principal
     {
-        public int StudentId { get; set; }
+        public int PrincipalId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
+        public string Gender { get; set; }
         public DateTime DOB { get; set; }
-        public string Sex { get; set; }
 
-        //Navigation property, which acts as a collection of the child
-        public virtual ICollection<Address> Addresses { get; set; }
+        //Navigation property....One-to-one relationship
+        public virtual Address Address { get; set; }
 
-        //Navigation property
-        public virtual ICollection<Parent> Parents { get; set; }
+        //Foreign Key property
+        public int AddressId { get; set; }
     }
 }

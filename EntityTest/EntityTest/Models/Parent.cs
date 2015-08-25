@@ -1,24 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using EntityTest.Models;
 
 namespace EntityTest.Models
 {
-    class Student
+    class Parent
     {
-        public int StudentId { get; set; }
+        public int ParentId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
+        public string Gender { get; set; }
         public DateTime DOB { get; set; }
-        public string Sex { get; set; }
 
-        //Navigation property, which acts as a collection of the child
+        //Navigation Property
         public virtual ICollection<Address> Addresses { get; set; }
 
-        //Navigation property
-        public virtual ICollection<Parent> Parents { get; set; }
+        //Navigation Property
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

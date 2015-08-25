@@ -13,11 +13,15 @@ namespace EntityTest
 
         public DbSet<Student> Student { get; set; }
         public DbSet<Address> Address { get; set; }        
+        public DbSet<Parent> Parent { get; set; }
+        public DbSet<Principal> Principal { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelbuilder)
-        {            
-            modelbuilder.Configurations.Add(new StudentMap());            
+        {
+            modelbuilder.Configurations.Add(new StudentMap());
             modelbuilder.Configurations.Add(new AddressMap());
+            modelbuilder.Configurations.Add(new ParentMap());
+            modelbuilder.Configurations.Add(new PrincipalMap());
         }
     }
 }
