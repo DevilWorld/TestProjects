@@ -15,10 +15,6 @@ namespace EntityTest.Models
         public string Gender { get; set; }
         public DateTime DOB { get; set; }
 
-        //Navigation property....One-to-one relationship
-        public virtual Address Address { get; set; }
-
-        //Foreign Key property
-        public int AddressId { get; set; }
+        public virtual PrincipalAddress PrincipalAddress { get; set; }
     }
 }

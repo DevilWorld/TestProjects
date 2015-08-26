@@ -22,6 +22,7 @@ namespace EntityTest
             modelbuilder.Configurations.Add(new AddressMap());
             modelbuilder.Configurations.Add(new ParentMap());
             modelbuilder.Configurations.Add(new PrincipalMap());
+            modelbuilder.Configurations.Add(new PrincipalAddressMap());
         }
     }
 }

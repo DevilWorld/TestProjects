@@ -74,7 +74,7 @@ namespace EntityTest
                 };
 
                 //_context.Parent.Add(_parentstudent);
-
+                                
                 var _principal = new Principal
                 {
                     FirstName = "Jim",
@@ -82,15 +82,15 @@ namespace EntityTest
                     LastName = "Jack",
                     Gender = "M",
                     DOB = DateTime.Now.AddYears(-60),
-                    Address = new Address
+                    PrincipalAddress = new PrincipalAddress
                     {
-                        Address1 = "2310 Prestigious Lane",
+                        Address1 = "2310 Prestigious Lane1",
                         Address2 = string.Empty,
                         City = "Charlotte",
                         State = "NC",
                         Zip = 28269
                     }
-                };
+            };
 
                 _context.Principal.Add(_principal);
                 _context.SaveChanges();

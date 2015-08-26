@@ -11,3 +11,8 @@
 	, CONSTRAINT fk_tblprincipal_address_id	FOREIGN KEY (AddressId) REFERENCES tblAddress(AddressId)
 )
 GO
+
+ALTER TABLE dbo.tblPrincipal DROP CONSTRAINT fk_tblprincipal_address_id
+GO
+ALTER TABLE dbo.tblPrincipal DROP COLUMN AddressId
+GO

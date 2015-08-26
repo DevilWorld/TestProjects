@@ -75,5 +75,6 @@
     <None Include="Tables\tblClass.sql" />
     <None Include="Tables\tblStudentClasses.sql" />
     <None Include="Tables\tblHomeWork.sql" />
+    <None Include="Tables\tblPrincipalAddress.sql" />
   </ItemGroup>
 </Project>
