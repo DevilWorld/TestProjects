@@ -17,7 +17,8 @@ namespace EntityTest.Mapper
             Property(p => p.MiddleName).HasColumnName("MiddleName").HasColumnType("varchar");
             Property(p => p.LastName).HasColumnName("LastName").HasColumnType("varchar");
             Property(p => p.Gender).HasColumnName("Gender").HasColumnType("varchar");
-            Property(p => p.DOB).HasColumnName("DOB").HasColumnType("datetime");            
+            Property(p => p.DOB).HasColumnName("DOB").HasColumnType("datetime");
+            
         }
     }
 }

@@ -74,7 +74,7 @@ namespace EntityTest
                 };
 
                 //_context.Parent.Add(_parentstudent);
-                                
+
                 var _principal = new Principal
                 {
                     FirstName = "Jim",
@@ -90,9 +90,30 @@ namespace EntityTest
                         State = "NC",
                         Zip = 28269
                     }
-            };
+                };
 
-                _context.Principal.Add(_principal);
+                //_context.Principal.Add(_principal);
+
+                //var _school = new School
+                //{
+                //    SchoolName = "BMHSS",
+                //    Principal = _principal,
+                //    SchoolAddress = new Address
+                //    {
+                //        Address1 = "2310 Prestigious Lane",
+                //        Address2 = string.Empty,
+                //        City = "Charlotte",
+                //        State = "NC",
+                //        Zip = 28269
+                //    }
+                //};
+
+                var _school = new School
+                {
+                    SchoolName = "BMHSS",                    
+                };
+
+                _context.School.Add(_school);
                 _context.SaveChanges();
             }
         }

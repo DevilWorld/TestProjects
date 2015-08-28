@@ -15,6 +15,7 @@ namespace EntityTest
         public DbSet<Address> Address { get; set; }        
         public DbSet<Parent> Parent { get; set; }
         public DbSet<Principal> Principal { get; set; }
+        public DbSet<School> School { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelbuilder)
         {
@@ -23,6 +24,7 @@ namespace EntityTest
             modelbuilder.Configurations.Add(new ParentMap());
             modelbuilder.Configurations.Add(new PrincipalMap());
             modelbuilder.Configurations.Add(new PrincipalAddressMap());
+            modelbuilder.Configurations.Add(new SchoolMap());
         }
     }
 }

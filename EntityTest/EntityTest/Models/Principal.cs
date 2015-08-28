@@ -13,8 +13,11 @@ namespace EntityTest.Models
         public string MiddleName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
-        public DateTime DOB { get; set; }
+        public DateTime DOB { get; set; }        
 
-        public virtual PrincipalAddress PrincipalAddress { get; set; }
+        public PrincipalAddress PrincipalAddress { get; set; }
+
+        //one to one for school with principal
+        public School School { get; set; }
     }
 }

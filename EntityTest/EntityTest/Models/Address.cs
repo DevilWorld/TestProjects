@@ -20,5 +20,7 @@ namespace EntityTest.Models
 
         //Navagation property for parent
         public virtual ICollection<Parent> Parents { get; set; }
+
+        public School School { get; set; }
     }
 }

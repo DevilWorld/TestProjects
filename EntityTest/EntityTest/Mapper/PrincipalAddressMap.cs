@@ -20,7 +20,7 @@ namespace EntityTest.Mapper
             Property(p => p.State).HasColumnName("State").HasColumnType("varchar");
             Property(p => p.Zip).HasColumnName("Zip").HasColumnType("int");
 
-            HasRequired(p => p.Principal).WithRequiredPrincipal(a => a.PrincipalAddress);
+            HasRequired(p => p.Principal).WithRequiredDependent(d=>d.PrincipalAddress);
         }
     }
 }

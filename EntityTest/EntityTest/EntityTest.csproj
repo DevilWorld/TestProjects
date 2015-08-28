@@ -72,11 +72,13 @@
     <Compile Include="Mapper\ParentMap.cs" />
     <Compile Include="Mapper\PrincipalAddressMap.cs" />
     <Compile Include="Mapper\PrincipalMap.cs" />
+    <Compile Include="Mapper\SchoolMap.cs" />
     <Compile Include="Mapper\StudentMap.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Principal.cs" />
     <Compile Include="Models\PrincipalAddress.cs" />
+    <Compile Include="Models\School.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
