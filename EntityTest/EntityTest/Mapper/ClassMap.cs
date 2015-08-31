@@ -26,13 +26,6 @@ namespace EntityTest.Mapper
             HasRequired(s => s.Subject)
                 .WithMany(c => c.Class)
                 .HasForeignKey(fk => fk.SubjectId);
-
-            //HasMany(s => s.Student)
-            //    .WithMany(c => c.Class)
-            //    .Map(t => t.ToTable("tblStudentClasses")
-            //        .MapLeftKey("StudentId")
-            //        .MapRightKey("ClassId")
-            //    );
         }
     }
 }

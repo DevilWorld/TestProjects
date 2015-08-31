@@ -22,6 +22,6 @@ namespace EntityTest.Models
         //Navigation Property for Subject
         public virtual Subject Subject { get; set; }
 
-        public virtual ICollection<Student> Student { get; set; }
+        public virtual ICollection<StudentClasses> StudentClass { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace EntityTest
     {
         static void Main(string[] args)
         {
-            AppDomain.CurrentDomain.SetData("DataDirectory", @"C:\Users\Dinesh\Source\Repos\TestProjects\EntityTest\EntityTest\App_Data");
+            AppDomain.CurrentDomain.SetData("DataDirectory", @"C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\EntityTest\App_Data");
 
             using (var _context = new EntityContext())
             {

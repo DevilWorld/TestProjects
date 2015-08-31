@@ -11,12 +11,21 @@ namespace EntityTest.Mapper
         {
             ToTable("tblStudentClasses");
 
-            HasKey(pk => pk.StudentClassId);
+            HasKey(pk => new { pk.StudentId, pk.ClassId });
 
-            Property(p => p.StudentId).HasColumnName("StudentId");
-            Property(p => p.ClassId).HasColumnName("ClassId");
+            Property(p => p.StudentClassId).HasColumnName("StudentClassId").HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            
             Property(p => p.FromDate).HasColumnName("FromDate");
             Property(p => p.ToDate).HasColumnName("ToDate");
+
+            HasRequired(a => a.Student)
+                .WithMany(sc => sc.StudentClass)
+                .HasForeignKey(t => t.StudentId);
+
+            HasRequired(c => c.Class)
+                .WithMany(sc => sc.StudentClass)
+                .HasForeignKey(fk => fk.ClassId);
+
         }
     }
 }
