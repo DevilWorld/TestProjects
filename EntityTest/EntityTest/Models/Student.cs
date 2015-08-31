@@ -22,5 +22,7 @@ namespace EntityTest.Models
         public virtual ICollection<Parent> Parents { get; set; }
 
         public virtual ICollection<StudentClasses> StudentClass { get; set; }
+
+        public virtual ICollection<HomeWork> HomeWork { get; set; }
     }
 }

@@ -167,7 +167,18 @@ namespace EntityTest
                     FromDate = DateTime.Now,
                     ToDate = DateTime.Now
                 };
-                _context.StudentClass.Add(_studentClass);
+                //_context.StudentClass.Add(_studentClass);
+
+                var _homeWork = new HomeWork
+                {
+                    Student=_student,
+                    Class = _class,
+                    CreatedBy = 1, 
+                    DateCreated =  DateTime.Now,
+                    CompletedOn=DateTime.Now,
+                    HomeWorkContent = "Test"
+                };
+                _context.HomeWork.Add(_homeWork);
                 _context.SaveChanges();
             }
         }

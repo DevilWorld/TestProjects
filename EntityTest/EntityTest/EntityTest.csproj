@@ -70,6 +70,7 @@
     <Compile Include="EntityContext.cs" />
     <Compile Include="Mapper\AddressMap.cs" />
     <Compile Include="Mapper\ClassMap.cs" />
+    <Compile Include="Mapper\HomeWorkMap.cs" />
     <Compile Include="Mapper\ParentMap.cs" />
     <Compile Include="Mapper\PrincipalAddressMap.cs" />
     <Compile Include="Mapper\PrincipalMap.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Mapper\TeacherMap.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Class.cs" />
+    <Compile Include="Models\HomeWork.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Principal.cs" />
     <Compile Include="Models\PrincipalAddress.cs" />

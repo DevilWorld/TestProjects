@@ -20,6 +20,7 @@ namespace EntityTest
         public DbSet<Subject> Subject { get; set; }
         public DbSet<Class> Class { get; set; }
         public DbSet<StudentClasses> StudentClass { get; set; }
+        public DbSet<HomeWork> HomeWork { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelbuilder)
         {
@@ -33,6 +34,7 @@ namespace EntityTest
             modelbuilder.Configurations.Add(new SubjectMap());
             modelbuilder.Configurations.Add(new ClassMap());
             modelbuilder.Configurations.Add(new StudentClassMap());
+            modelbuilder.Configurations.Add(new HomeWorkMap());
         }
     }
 }

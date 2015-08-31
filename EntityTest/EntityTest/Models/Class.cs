@@ -23,5 +23,7 @@ namespace EntityTest.Models
         public virtual Subject Subject { get; set; }
 
         public virtual ICollection<StudentClasses> StudentClass { get; set; }
+
+        public virtual ICollection<HomeWork> HomeWork { get; set; }
     }
 }
