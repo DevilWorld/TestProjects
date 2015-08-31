@@ -69,17 +69,25 @@
   <ItemGroup>
     <Compile Include="EntityContext.cs" />
     <Compile Include="Mapper\AddressMap.cs" />
+    <Compile Include="Mapper\ClassMap.cs" />
     <Compile Include="Mapper\ParentMap.cs" />
     <Compile Include="Mapper\PrincipalAddressMap.cs" />
     <Compile Include="Mapper\PrincipalMap.cs" />
     <Compile Include="Mapper\SchoolMap.cs" />
+    <Compile Include="Mapper\StudentClassMap.cs" />
     <Compile Include="Mapper\StudentMap.cs" />
+    <Compile Include="Mapper\SubjectMap.cs" />
+    <Compile Include="Mapper\TeacherMap.cs" />
     <Compile Include="Models\Address.cs" />
+    <Compile Include="Models\Class.cs" />
     <Compile Include="Models\Parent.cs" />
     <Compile Include="Models\Principal.cs" />
     <Compile Include="Models\PrincipalAddress.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentClasses.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Teachers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

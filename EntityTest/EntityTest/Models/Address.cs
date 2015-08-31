@@ -19,8 +19,9 @@ namespace EntityTest.Models
         public virtual ICollection<Student> Students { get; set; }
 
         //Navagation property for parent
-        public virtual ICollection<Parent> Parents { get; set; }
+        public virtual ICollection<Parent> Parents { get; set; }        
 
-        public School School { get; set; }
+        //Navigation property for Teacher
+        public virtual Teachers Teacher { get; set; }
     }
 }

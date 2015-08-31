@@ -9,3 +9,17 @@
 	, CONSTRAINT fk_tblschool_principal_id	FOREIGN KEY (PrincipalId) REFERENCES tblPrincipal (PrincipalId)
 )
 GO
+
+ALTER TABLE dbo.tblSchool DROP CONSTRAINT fk_tblschool_school_address_id
+GO
+
+ALTER TABLE dbo.tblSchool DROP COLUMN SchoolAddressId
+GO
+
+ALTER TABLE dbo.tblSchool ADD Address1	VARCHAR(100)	NULL
+								, Address2	VARCHAR(100)	NULL
+								, City		VARCHAR(30)		NULL
+								, [State]	VARCHAR(30)		NULL
+								, Zip		INT				NULL
+GO
+

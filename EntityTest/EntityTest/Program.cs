@@ -8,13 +8,13 @@ namespace EntityTest
     {
         static void Main(string[] args)
         {
-            AppDomain.CurrentDomain.SetData("DataDirectory", @"C:\Users\dinesh.venkatachalam\Source\MyRepos\TestProjects\EntityTest\EntityTest\App_Data");
+            AppDomain.CurrentDomain.SetData("DataDirectory", @"C:\Users\Dinesh\Source\Repos\TestProjects\EntityTest\EntityTest\App_Data");
 
             using (var _context = new EntityContext())
             {
                 var _student = new Student
                 {
-                    FirstName = "Dinesh",
+                    FirstName = "Dineshhhh",
                     MiddleName = "R",
                     LastName = "Venkatachalam",
                     Sex = "M",
@@ -110,10 +110,64 @@ namespace EntityTest
 
                 var _school = new School
                 {
-                    SchoolName = "BMHSS",                    
+                    SchoolName = "BMHSS",
+                    Address1 = "2310 Prestigious Lane12",
+                    Address2 = string.Empty,
+                    City = "Charlotte",
+                    State = "NC",
+                    Zip = 28269,
+                    Principal = _principal
                 };
 
-                _context.School.Add(_school);
+                //_context.School.Add(_school);
+                
+
+                var _teacher = new Teachers
+                {
+                    FirstName = "Suresh",
+                    MiddleName = "S",
+                    LastName = "Kumar",
+                    Gender = "M",
+                    DOB = DateTime.Now.AddYears(40),
+                    TeacherAddress = new Address
+                    {
+                        Address1 = "2310 Prestigious Lane2",
+                        Address2 = string.Empty,
+                        City = "Charlotte",
+                        State = "NC",
+                        Zip = 28269
+                    },
+                    School = _school
+                };
+                //_context.Teacher.Add(_teacher);
+
+
+                var _subject = new Subject
+                {
+                    SubjectName = "English"
+                };
+
+                //_context.Subject.Add(_subject);
+
+                var _class = new Class
+                {
+                    ClassName = "Eigth Standard",
+                    Subject = _subject,
+                    Teacher = _teacher,
+                    TeacherFromDate = DateTime.Now.AddMonths(-5),
+                    TeacherToDate = DateTime.Now
+                };
+
+                //_context.Class.Add(_class);
+
+                var _studentClass = new StudentClasses
+                {
+                    Student = _student,
+                    Class = _class,
+                    FromDate = DateTime.Now,
+                    ToDate = DateTime.Now
+                };
+                _context.StudentClass.Add(_studentClass);
                 _context.SaveChanges();
             }
         }

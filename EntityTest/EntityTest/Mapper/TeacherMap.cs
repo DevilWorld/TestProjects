@@ -4,17 +4,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityTest.Mapper
 {
-    class PrincipalMap : EntityTypeConfiguration<Principal>
+    class TeacherMap : EntityTypeConfiguration<Teachers>
     {
-        public PrincipalMap()
+        public TeacherMap()
         {
-            ToTable("tblPrincipal");
+            //Table configuration
+            ToTable("tblTeacher");
 
             //Primary Key
-            HasKey(pk => pk.PrincipalId);
+            HasKey(pk => pk.TeacherId);
 
-            //Property-column mapping
-            Property(P => P.PrincipalId).HasColumnName("PrincipalId")
+            //Property to column mapping
+            Property(p => p.TeacherId).HasColumnName("TeacherId").HasColumnType("int")
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.FirstName).HasColumnName("FirstName").HasColumnType("varchar");
             Property(p => p.MiddleName).HasColumnName("MiddleName").HasColumnType("varchar");
@@ -22,7 +23,14 @@ namespace EntityTest.Mapper
             Property(p => p.Gender).HasColumnName("Gender").HasColumnType("varchar");
             Property(p => p.DOB).HasColumnName("DOB").HasColumnType("datetime");
 
-            
+            //Relationships                 1 to 0 or 1
+            HasRequired(a => a.TeacherAddress)
+                .WithOptional(t => t.Teacher)
+                .Map(m => m.MapKey("AddressId"));
+
+            HasRequired(s => s.School)
+                .WithMany(t => t.Teacher)
+                .HasForeignKey(fk => fk.SchoolId);
         }
     }
 }
