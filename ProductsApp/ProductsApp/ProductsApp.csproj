@@ -202,7 +202,48 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CABSDbContextContext.cs" />
+    <Compile Include="Models\CABS_100510_00.cs" />
+    <Compile Include="Models\CABS_100512_00.cs" />
+    <Compile Include="Models\CABS_100513_00.cs" />
+    <Compile Include="Models\CABS_100513_01.cs" />
+    <Compile Include="Models\CABS_101590_00.cs" />
+    <Compile Include="Models\CABS_102090_00.cs" />
+    <Compile Include="Models\CABS_102590_00.cs" />
+    <Compile Include="Models\CABS_103015_00.cs" />
+    <Compile Include="Models\CABS_103015_01.cs" />
+    <Compile Include="Models\CABS_103020_00.cs" />
+    <Compile Include="Models\CABS_103025_00.cs" />
+    <Compile Include="Models\CABS_103090_00.cs" />
+    <Compile Include="Models\CABS_105090_00.cs" />
+    <Compile Include="Models\CABS_106005_00.cs" />
+    <Compile Include="Models\CABS_106005_01.cs" />
+    <Compile Include="Models\CABS_106090_00.cs" />
+    <Compile Include="Models\CABS_401520_00.cs" />
+    <Compile Include="Models\CABS_401521_00.cs" />
+    <Compile Include="Models\CABS_401525_00.cs" />
+    <Compile Include="Models\CABS_401535_00.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Mapping\CABS_100510_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_100512_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_100513_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_100513_01Map.cs" />
+    <Compile Include="Models\Mapping\CABS_101590_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_102090_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_102590_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_103015_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_103015_01Map.cs" />
+    <Compile Include="Models\Mapping\CABS_103020_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_103025_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_103090_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_105090_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_106005_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_106005_01Map.cs" />
+    <Compile Include="Models\Mapping\CABS_106090_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_401520_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_401521_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_401525_00Map.cs" />
+    <Compile Include="Models\Mapping\CABS_401535_00Map.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -211,6 +252,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
+    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
+    <Content Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -273,6 +317,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

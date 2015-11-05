@@ -2,7 +2,7 @@
 
 namespace EntityTest.Models
 {
-    class HomeWork      //Many-to-many relationship with additional fields
+    public class HomeWork      //Many-to-many relationship with additional fields
     {
         public int HomeWorkId { get; set; }
 

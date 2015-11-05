@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EntityTest.Models
 {
-    class School
+    public class School
     {
         public int SchoolId { get; set; }
         public string SchoolName { get; set; }

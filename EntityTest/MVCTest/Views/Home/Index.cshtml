@@ -1,0 +1,25 @@
+﻿@model EntityTest.Models.Student
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<fieldset>
+    <legend>Test text</legend>
+    <div>
+        @Html.LabelFor(l => l.FirstName)
+        @Html.TextBoxFor(t => t.FirstName)
+    </div>
+    <div>
+        @Html.LabelFor(l => l.MiddleName)
+        @Html.TextBoxFor(t => t.MiddleName)
+    </div>
+    <div>
+        @Html.LabelFor(l => l.LastName)
+        @Html.TextBoxFor(t => t.LastName)
+    </div>
+    <div>
+        
+    </div>
+</fieldset>

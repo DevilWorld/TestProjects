@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 14 for Web
+# Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityTest", "EntityTest\EntityTest.csproj", "{6A106105-CE7B-43AB-B436-18CE3BB06E0F}"
@@ -8,6 +8,8 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TestDatabase", "TestDatabase\TestDatabase.sqlproj", "{F0C07AB3-AE52-4E3F-92FF-7CF3E6E8C23E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{34453170-6CA2-4B59-94CE-BF76C6CF643E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCTest", "MVCTest\MVCTest.csproj", "{67AEEFFE-8DDF-42C5-AF61-13F57A76619F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{34453170-6CA2-4B59-94CE-BF76C6CF643E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34453170-6CA2-4B59-94CE-BF76C6CF643E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34453170-6CA2-4B59-94CE-BF76C6CF643E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AEEFFE-8DDF-42C5-AF61-13F57A76619F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AEEFFE-8DDF-42C5-AF61-13F57A76619F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AEEFFE-8DDF-42C5-AF61-13F57A76619F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AEEFFE-8DDF-42C5-AF61-13F57A76619F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

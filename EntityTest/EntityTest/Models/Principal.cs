@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityTest.Models
 {
-    class Principal
+    public class Principal
     {
         public int PrincipalId { get; set; }
         public string FirstName { get; set; }

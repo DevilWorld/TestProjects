@@ -4,7 +4,7 @@ using EntityTest.Models;
 
 namespace EntityTest.Models
 {
-    class Parent
+    public class Parent
     {
         public int ParentId { get; set; }
         public string FirstName { get; set; }
