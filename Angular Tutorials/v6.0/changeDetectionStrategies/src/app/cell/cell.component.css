@@ -1,0 +1,9 @@
+div{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+div.colored{
+    background-color: yellow;
+}

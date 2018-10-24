@@ -16,3 +16,4 @@ C:\Users\dinesh.venkatachalam\Documents\Visual Studio 2015\Projects\WindowsForms
 C:\Users\dinesh.venkatachalam\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\nunit.util.dll
 C:\Users\dinesh.venkatachalam\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\NUnit.VisualStudio.TestAdapter.dll
 C:\Users\dinesh.venkatachalam\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\DotLiquid.dll
+C:\Users\Dinesh\Source\Repos\TestProjects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
