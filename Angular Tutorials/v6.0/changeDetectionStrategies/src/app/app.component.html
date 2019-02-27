@@ -4,6 +4,10 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<app-cell></app-cell>
-<app-cell></app-cell>
+<!-- <app-cell [changeColor]="changeColor1"></app-cell>
+<app-cell-duplicate ></app-cell-duplicate>    <!--[changeColor]="changeColor2"
+
+<button (click)="toggleColors()">Click</button> -->
+<app-child [propChild]="propChildValue"></app-child>
+<button (click)="toggle()">Submit</button>
 <router-outlet></router-outlet>
